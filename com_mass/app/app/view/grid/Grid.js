@@ -2,7 +2,8 @@ Ext.define('Mass.view.grid.Grid', {
     extend: 'Ext.grid.Panel',
     xtype: 'massgrid',
     requires: [
-        'Ext.grid.column.Action'
+        'Ext.grid.column.Action',
+        'Mass.view.main.AddMrpForm'
     ],
     controller: 'grid',
     store: 'Mprs',

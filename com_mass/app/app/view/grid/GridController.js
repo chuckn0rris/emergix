@@ -19,7 +19,11 @@ Ext.define('Mass.view.grid.GridController', {
         var tabPanel = this.getView().up('tabpanel'),
             tab = tabPanel.add({
                 title: 'Add new MRP',
-                closable: true
+                closable: true,
+                items: [{
+                    xtype: 'addmrpform',
+                    height: 100
+                }]
             });
 
         tabPanel.setActiveTab(tab);

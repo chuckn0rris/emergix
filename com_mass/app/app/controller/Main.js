@@ -1,10 +1,10 @@
 Ext.define('Mass.controller.Main', {
     extend: 'Ext.app.Controller',
     views: [
-    	'grid.Grid'
+        'grid.Grid'
     ],
     refs: {
-    	addButton: "button"
+        addButton: "button"
     },
     control: {
         addButton: {
@@ -13,6 +13,6 @@ Ext.define('Mass.controller.Main', {
     },
 
     addNewRecord: function() {
-    	alert(2222)
+        alert(2222)
     }
 });
