@@ -1,6 +1,19 @@
 Ext.define('Mass.store.Mprs', {
     extend: 'Ext.data.Store',
-    fields: ['id', 'title'],
+    requires: ['Mass.model.Mrp'],
+    model: 'Mass.model.Mrp',
+
+    autoSync: true,
+    autoLoad: true,
+    proxy: {
+        type: 'memory',
+        // url: 'http://www.thunkerbolt.com/index.php?option=com_mass&task=mrpGrid',
+        reader: {
+            type: 'json',
+            rootProperty: ''
+        }
+    },
+
     data: [{
         id: 1, title: "Title 1"
     },{
@@ -15,13 +28,5 @@ Ext.define('Mass.store.Mprs', {
         id: 6, title: "Title 6"
     },{
         id: 7, title: "Title 7"
-    }],
-    proxy: {
-        type: 'ajax',
-        url: '',
-        reader: {
-            type: 'json',
-            rootProperty: ''
-        }
-    }
+    }]
 });

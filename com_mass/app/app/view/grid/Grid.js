@@ -3,9 +3,9 @@ Ext.define('Mass.view.grid.Grid', {
     xtype: 'massgrid',
     requires: [
         'Ext.grid.column.Action',
-        'Mass.view.main.AddMrpForm'
+        'Mass.view.main.EditMrpForm'
     ],
-    controller: 'grid',
+    controller: 'main',
     store: 'Mprs',
     tbar: [{
         text: 'Refresh',
