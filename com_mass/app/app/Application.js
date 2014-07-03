@@ -5,11 +5,11 @@
  */
 Ext.define('Mass.Application', {
     extend: 'Ext.app.Application',
-    
+
     name: 'Mass',
 
     views: [
-        // TODO: add views here
+        'grid.Grid'
     ],
 
     controllers: [
@@ -18,9 +18,9 @@ Ext.define('Mass.Application', {
     ],
 
     stores: [
-        // TODO: add stores here
+        'Mprs'
     ],
-    
+
     launch: function () {
         // TODO - Launch the application
     }
