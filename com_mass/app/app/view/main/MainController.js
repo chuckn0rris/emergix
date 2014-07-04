@@ -7,8 +7,16 @@ Ext.define('Mass.view.main.MainController', {
 
     alias: 'controller.main',
 
-    saveMrp: function() {
-        this.getView().getRecord().set(this.getView().getValues())
+    onClickButton: function() {},
+
+    saveMrp: function(btn) {
+        var mrp = this.getView().getRecord();
+        if (mrp) {
+            mrp.set(this.getView().getValues())
+        } else {
+
+            this.addNewRecord(this.getView().getValues());
+        }
         this.closeMrpFormTab();
     },
 
@@ -25,10 +33,13 @@ Ext.define('Mass.view.main.MainController', {
             tab = tabPanel.add({
                 title: 'Edit MRP',
                 closable: true,
-                items: [{xtype: 'editmrpform'}]
+                items: [{
+                    xtype: 'addeditmrpform',
+                    title: 'Edit MRP'
+                }]
             });
 
-        tab.down('editmrpform').loadRecord(record);
+        tab.down('addeditmrpform').loadRecord(record);
 
         tabPanel.setActiveTab(tab);
     },
@@ -37,12 +48,20 @@ Ext.define('Mass.view.main.MainController', {
         this.getView().getStore().load();
     },
 
-    addNewRecord: function(scope) {
-        var addRecord = function(btn, text) {
-            var mrp = Ext.create('Mass.model.Mrp', {title: text});
-            this.getView().getStore().add(mrp);
-        };
+    openAddRecordWindow: function() {
+        Ext.create('Ext.Window', {
+            height: 400,
+            width: 300,
+            layout: 'fit',
+            items: [{
+                xtype: 'addeditmrpform',
+                title: 'Add MRP'
+            }]
+        }).show();
+    },
 
-        Ext.MessageBox.prompt("Add MRP", "Please, type name for new record", addRecord, this);
+    addNewRecord: function(data) {
+        var mrp = Ext.create('Mass.model.Mrp', data);
+        Mass.app.getMprsStore().add(mrp);
     }
 });

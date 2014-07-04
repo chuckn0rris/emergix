@@ -4,7 +4,14 @@ Ext.define('Mass.view.main.MainModel', {
     alias: 'viewmodel.main',
 
     data: {
-        name: 'Mass'
+        name: 'Mass',
+        action: 'Edit'
+    },
+
+    formulas: {
+    	actionWindowTitle: function(get) {
+    		return get('action') + " MRP";
+    	}
     }
 
     //TODO - add data, formulas and/or methods to support your view

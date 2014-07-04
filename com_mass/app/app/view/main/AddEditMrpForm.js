@@ -1,12 +1,14 @@
-Ext.define('Mass.view.main.EditMrpForm', {
+Ext.define('Mass.view.main.AddEditMrpForm', {
     extend: 'Ext.form.Panel',
-    xtype: 'editmrpform',
+    xtype: 'addeditmrpform',
     controller: 'main',
     bodyPadding: 10,
+    viewModel: {
+        type: 'main'
+    },
     frame: true,
     height: 200,
     width: 460,
-    title: 'Edit MRP',
     items: [{
         xtype: 'textfield',
         anchor: '100%',

@@ -2318,7 +2318,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Mass.store.Mprs": [],
   "Mass.view.grid.Grid": [],
   "Mass.view.grid.GridController": [],
-  "Mass.view.main.EditMrpForm": [],
+  "Mass.view.main.AddEditMrpForm": [],
   "Mass.view.main.Main": [],
   "Mass.view.main.MainController": [],
   "Mass.view.main.MainModel": []
@@ -3660,8 +3660,8 @@ Ext.ClassManager.addNameAliasMappings({
   "Mass.view.grid.GridController": [
     "controller.grid"
   ],
-  "Mass.view.main.EditMrpForm": [
-    "widget.editmrpform"
+  "Mass.view.main.AddEditMrpForm": [
+    "widget.addeditmrpform"
   ],
   "Mass.view.main.Main": [
     "widget.massviewport"

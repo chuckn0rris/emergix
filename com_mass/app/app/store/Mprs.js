@@ -2,6 +2,7 @@ Ext.define('Mass.store.Mprs', {
     extend: 'Ext.data.Store',
     requires: ['Mass.model.Mrp'],
     model: 'Mass.model.Mrp',
+    name: 'mrpsstore',
 
     autoSync: true,
     autoLoad: true,

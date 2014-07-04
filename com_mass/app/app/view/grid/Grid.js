@@ -3,17 +3,18 @@ Ext.define('Mass.view.grid.Grid', {
     xtype: 'massgrid',
     requires: [
         'Ext.grid.column.Action',
-        'Mass.view.main.EditMrpForm'
+        'Mass.view.main.AddEditMrpForm'
     ],
     controller: 'main',
     store: 'Mprs',
+    reference: 'grid',
     tbar: [{
         text: 'Refresh',
         handler: 'refresh'
     }, {
         text: 'Add new MRP',
         icon: 'resources/images/add.gif',
-        handler: 'addNewRecord'
+        handler: 'openAddRecordWindow'
     }],
     columns: [{
         xtype: 'actioncolumn',
