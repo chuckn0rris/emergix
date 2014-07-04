@@ -20,11 +20,12 @@ Ext.define('Mass.view.grid.Grid', {
         width: 50,
         items: [{
             icon: 'resources/images/cog_edit.png',
-            tooltip: 'Edit',
+            iconCls: 'mass-grid-actioncolumn-editicon',
+            tooltip: 'Edit record',
             handler: 'editRecord'
         },{
             icon: 'resources/images/delete.gif',
-            tooltip: 'Delete',
+            tooltip: 'Delete record',
             handler: 'deleteRecord'
         }]
     }, {

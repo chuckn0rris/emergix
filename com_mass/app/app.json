@@ -142,6 +142,9 @@
         {
             "path": "bootstrap.css",
             "bootstrap": true
+        }, {
+            "path": "resources/mass-style.css",
+            "update": "full"
         }
     ],
 
@@ -171,13 +174,13 @@
      * Extra resources to be copied along when build
      */
     "resources": [
+        "resources/images"
     ],
 
     /**
      * File / directory name matchers to ignore when copying to the builds, must be valid regular expressions
      */
     "ignore": [
-        "^\\.svn$",
         "^\\.git$"
     ],
 

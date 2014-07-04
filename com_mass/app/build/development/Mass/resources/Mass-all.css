@@ -8228,6 +8228,12 @@ div.x-form-text-grow .x-form-textarea {
   height: auto;
 }
 
+/* line 1, ../../../../ext/packages/ext-theme-base/sass/src/grid/column/Action.scss */
+.x-grid-cell-inner-action-col {
+  line-height: 0;
+  font-size: 0;
+}
+
 /* line 1, ../../../../ext/packages/ext-theme-base/sass/src/menu/Menu.scss */
 .x-menu {
   outline: none;
@@ -20144,6 +20150,24 @@ div.x-border-layout-ct {
 /* line 47, ../../../../ext/packages/ext-theme-neutral/sass/src/window/MessageBox.scss */
 .x-message-box-error {
   background-image: url(images/shared/icon-error.png);
+}
+
+/* line 1, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Action.scss */
+.x-grid-cell-inner-action-col {
+  padding: 4px 4px 4px 4px;
+}
+
+/* line 12, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Action.scss */
+.x-action-col-cell .x-item-disabled {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+
+/* line 16, ../../../../ext/packages/ext-theme-neutral/sass/src/grid/column/Action.scss */
+.x-action-col-icon {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
 }
 
 /*
