@@ -2318,10 +2318,13 @@ Ext.ClassManager.addNameAlternateMappings({
   "Mass.store.Mprs": [],
   "Mass.view.grid.Grid": [],
   "Mass.view.grid.GridController": [],
-  "Mass.view.main.AddEditMrpForm": [],
+  "Mass.view.main.AddMrpForm": [],
+  "Mass.view.main.EditMrpForm": [],
   "Mass.view.main.Main": [],
   "Mass.view.main.MainController": [],
-  "Mass.view.main.MainModel": []
+  "Mass.view.main.MainModel": [],
+  "Mass.view.main.MrpFormTabPanel": [],
+  "Mass.view.main.NavigationTabs": []
 });
 Ext.ClassManager.addNameAliasMappings({
   "Ext.AbstractManager": [],
@@ -3660,8 +3663,11 @@ Ext.ClassManager.addNameAliasMappings({
   "Mass.view.grid.GridController": [
     "controller.grid"
   ],
-  "Mass.view.main.AddEditMrpForm": [
-    "widget.addeditmrpform"
+  "Mass.view.main.AddMrpForm": [
+    "widget.addmrpform"
+  ],
+  "Mass.view.main.EditMrpForm": [
+    "widget.editmrpform"
   ],
   "Mass.view.main.Main": [
     "widget.massviewport"
@@ -3671,6 +3677,12 @@ Ext.ClassManager.addNameAliasMappings({
   ],
   "Mass.view.main.MainModel": [
     "viewmodel.main"
+  ],
+  "Mass.view.main.MrpFormTabPanel": [
+    "widget.mrpformtabpanel"
+  ],
+  "Mass.view.main.NavigationTabs": [
+    "widget.navigation-tabs"
   ]
 });
 Ext.setVersion("ext", "5.0.0.970");

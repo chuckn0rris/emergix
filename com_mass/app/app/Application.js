@@ -9,7 +9,8 @@ Ext.define('Mass.Application', {
     name: 'Mass',
 
     views: [
-        'grid.Grid'
+        'grid.Grid',
+        'main.AddMrpForm'
     ],
 
     controllers: [

@@ -1,6 +1,31 @@
 Ext.define('Mass.view.main.Main', {
-    extend: 'Ext.container.Container',
+    extend: 'Ext.container.Viewport',
     xtype: 'massviewport',
+
+        requires: [
+        'Ext.tab.Panel',
+        'Ext.tab.Tab',
+        'Ext.form.Panel',
+        'Ext.form.Label',
+        'Ext.XTemplate',
+        'Ext.form.FieldSet',
+        'Ext.form.field.ComboBox',
+        'Ext.form.CheckboxGroup',
+        'Ext.form.field.Checkbox',
+        'Ext.form.field.TextArea',
+        'Ext.form.field.Number',
+        'Ext.grid.Panel',
+        'Ext.grid.RowNumberer',
+        'Ext.grid.View',
+        'Ext.grid.column.Number',
+        'Ext.grid.column.Boolean',
+        'Ext.toolbar.Toolbar',
+        'Mass.view.main.EditMrpForm',
+        'Mass.view.main.MrpFormTabPanel',
+        'Mass.view.main.NavigationTabs'
+    ],
+
+
 
     controller: 'main',
     viewModel: {
@@ -17,14 +42,9 @@ Ext.define('Mass.view.main.Main', {
             title: '{name}'
         },
         region: 'west',
-        html: '<ul><li>This area is commonly used for navigation, for example, using a "tree" component.</li></ul>',
         width: 250,
-        split: true,
-        tbar: [{
-            text: 'Button',
-            handler: 'onClickButton'
-        }]
-    },{
+        split: true
+    }, {
         region: 'center',
         xtype: 'tabpanel',
         reference: 'tabpanel',

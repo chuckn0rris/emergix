@@ -3,38 +3,51 @@ Ext.define('Mass.view.grid.Grid', {
     xtype: 'massgrid',
     requires: [
         'Ext.grid.column.Action',
-        'Mass.view.main.AddEditMrpForm'
+        'Mass.view.main.EditMrpForm'
     ],
     controller: 'main',
     store: 'Mprs',
-    reference: 'grid',
     tbar: [{
         text: 'Refresh',
         handler: 'refresh'
     }, {
         text: 'Add new MRP',
         icon: 'resources/images/add.gif',
-        handler: 'openAddRecordWindow'
+        handler: 'addNewRecord'
     }],
-    columns: [{
-        xtype: 'actioncolumn',
-        width: 50,
-        items: [{
-            icon: 'resources/images/cog_edit.png',
-            iconCls: 'mass-grid-actioncolumn-editicon',
-            tooltip: 'Edit record',
-            handler: 'editRecord'
-        },{
-            icon: 'resources/images/delete.gif',
-            tooltip: 'Delete record',
-            handler: 'deleteRecord'
-        }]
-    }, {
+    columns: [
+    
+    {
+            
+            width: 95,
+            xtype: 'widgetcolumn',
+           
+ 
+            widget: {
+                width:85,
+                xtype: 'button',
+         		text:'Actions',
+         		menu: [{
+                        text:'Edit',
+                        listeners:{
+                         click: 'editRecord'
+                         
+                    }
+                    },{
+                        text:'Delete',
+                           listeners:{
+                         click: 'deleteRecord'
+                         
+                    }
+                    }]
+                }
+            }
+        , {
         dataIndex: 'id',
         text: 'ID',
         width: 50
     }, {
-        dataIndex: 'title',
+        dataIndex: 'mrp_title',
         text: 'Title',
         flex: 1
     }]

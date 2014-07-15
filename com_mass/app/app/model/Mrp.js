@@ -4,7 +4,7 @@ Ext.define('Mass.model.Mrp', {
 		name: 'id',
     	type: 'int'
     }, {
-    	name: 'title',
+    	name: 'mrp_title',
     	type: 'string'
     }]
 });

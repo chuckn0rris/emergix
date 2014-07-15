@@ -715,10 +715,13 @@ $include-mass-model-mrp: true;
 $include-mass-store-mprs: true;
 $include-mass-view-grid-grid: true;
 $include-mass-view-grid-gridcontroller: true;
-$include-mass-view-main-addeditmrpform: true;
+$include-mass-view-main-addmrpform: true;
+$include-mass-view-main-editmrpform: true;
 $include-mass-view-main-main: true;
 $include-mass-view-main-maincontroller: true;
 $include-mass-view-main-mainmodel: true;
+$include-mass-view-main-mrpformtabpanel: true;
+$include-mass-view-main-navigationtabs: true;
 /* including package ext-theme-base */
 @import '../../../../../ext/packages/ext-theme-base/sass/etc/all';
 /* including package ext-theme-neutral */
