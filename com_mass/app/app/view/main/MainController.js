@@ -54,7 +54,7 @@ Ext.define('Mass.view.main.MainController', {
                     id : 'mrp_'+action.result.id,
                     mrp_id : action.result.id,
                     closable: true,
-                    bbar: [{
+                    tbar: [{
                         text: 'Save',
                         icon: 'resources/images/add.gif',
                         handler: 'saveMrp',
@@ -192,15 +192,12 @@ Ext.define('Mass.view.main.MainController', {
         this.getView().getStore().load();
     },
 
-    exportPdf : function()
-    {
-
-    window.location = 'http://www.thunkerbolt.com/components/com_mass/NET/mrp.ashx?method=&buildImages=&showImages=&mrp_id=' + this.getView().down('editmrpform').getForm().getValues().id;
+    exportPdf: function() {
+        window.location = 'http://www.thunkerbolt.com/components/com_mass/NET/mrp.ashx?method=&buildImages=&showImages=&mrp_id=' + this.getView().down('editmrpform').getForm().getValues().id;
     },
 
-    importMrp: function()
-    {
-            Ext.create('Ext.Window', {
+    importMrp: function() {
+        Ext.create('Ext.Window', {
             width: 600,
             title: 'Import MRP',
             layout: 'fit',

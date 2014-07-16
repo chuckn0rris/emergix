@@ -22,7 +22,12 @@ Ext.define('Mass.view.main.Main', {
         'Ext.toolbar.Toolbar',
         'Mass.view.main.EditMrpForm',
         'Mass.view.main.MrpFormTabPanel',
-        'Mass.view.main.NavigationTabs'
+        'Mass.view.main.NavigationTabs',
+        'Mass.view.main.EditTravelForm',
+        'Mass.view.main.CostTotalsForm',
+        'Mass.view.grid.PersonnelGrid',
+        'Mass.view.grid.CommoditiesGrid',
+        'Mass.view.grid.OtherGrid'
     ],
 
 

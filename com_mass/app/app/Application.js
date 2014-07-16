@@ -10,6 +10,10 @@ Ext.define('Mass.Application', {
 
     views: [
         'grid.Grid',
+        'grid.PersonnelGrid',
+        'grid.EquipmentGrid',
+        'grid.CommoditiesGrid',
+        'grid.OtherGrid',
         'main.AddMrpForm'
     ],
 
@@ -19,7 +23,11 @@ Ext.define('Mass.Application', {
     ],
 
     stores: [
-        'Mprs'
+        'Mprs',
+        'Personnel',
+        'Equipment',
+        'Commodities',
+        'Other'
     ],
 
     launch: function () {

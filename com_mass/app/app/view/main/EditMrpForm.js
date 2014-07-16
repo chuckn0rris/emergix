@@ -170,69 +170,6 @@ Ext.define('Mass.view.main.EditMrpForm', {
             xtype: 'button',
             text: 'MyButton'
         }]
-    }, {
-        xtype: 'fieldset',
-        title: 'Emergency Support Functions (ESFs) Supported',
-        layout: {
-            type: 'vbox',
-            align: 'stretch'
-        },
-        items: [{
-            xtype: 'checkboxgroup',
-            width: 686,
-            fieldLabel: '',
-            defaults: {
-                xtype: 'checkboxfield',
-                padding: '0 20 5 0'
-            },
-            columns: 2,
-            items: [{
-                name: 'mrp_esf1',
-                boxLabel: 'ESF-1: Transportation'
-            }, {
-                name: 'mrp_esf2',
-                boxLabel: 'ESF-2: Communications'
-            }, {
-                name: 'mrp_esf3',
-                boxLabel: 'ESF-3: Public Works & Engineering'
-            }, {
-                name: 'mrp_esf4',
-                boxLabel: 'ESF-4: Firefighting'
-            }, {
-                name: 'mrp_esf5',
-                boxLabel: 'ESF-5: Emergency Management'
-            }, {
-                name: 'mrp_esf6',
-                boxLabel: 'ESF-6: Mass Care, Emergency Assistance, Housing, Human Services'
-            }, {
-                name: 'mrp_esf7',
-                boxLabel: 'ESF-7: Logistics Management and Resource Support'
-            }, {
-                name: 'mrp_esf8',
-                boxLabel: 'ESF-8: Public Health & Medical Services'
-            }, {
-                name: 'mrp_esf9',
-                boxLabel: 'ESF-9: Search & Rescue'
-            }, {
-                name: 'mrp_esf10',
-                boxLabel: 'ESF-10: Oil & Hazardous Materials Response'
-            }, {
-                name: 'mrp_esf11',
-                boxLabel: 'ESF-11: Argiculture & Natural Resources'
-            }, {
-                name: 'mrp_esf12',
-                boxLabel: 'ESF-12: Energy'
-            }, {
-                name: 'mrp_esf13',
-                boxLabel: 'ESF-13: Public Safety & Security'
-            }, {
-                name: 'mrp_esf14',
-                boxLabel: 'ESF-14: Long-Term Community Recovery'
-            }, {
-                name: 'mrp_esf15',
-                boxLabel: 'ESF-15: External Affairs'
-            }]
-        }]
     },
     {
         xtype: 'fieldset',
@@ -243,7 +180,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
         },
         items: [{
             xtype: 'checkboxgroup',
-            width: 686,
+            
             fieldLabel: '',
             defaults: {
                 xtype: 'checkboxfield',
@@ -252,106 +189,141 @@ Ext.define('Mass.view.main.EditMrpForm', {
             columns: 2,
             items: [{
                 name: 'mrp_esf1',
+                inputValue: 'ESF-1: Transportation',
                 boxLabel: 'ESF-1: Transportation'
             }, {
                 name: 'mrp_esf2',
+                inputValue: 'ESF-2: Communications',
                 boxLabel: 'ESF-2: Communications'
             }, {
                 name: 'mrp_esf3',
+                inoutValue: 'ESF-3: Public Works & Engineering',
                 boxLabel: 'ESF-3: Public Works & Engineering'
             }, {
                 name: 'mrp_esf4',
+                inputValue: 'ESF-4: Firefighting',
                 boxLabel: 'ESF-4: Firefighting'
             }, {
                 name: 'mrp_esf5',
+                inputValue: 'ESF-5: Emergency Management',
                 boxLabel: 'ESF-5: Emergency Management'
             }, {
                 name: 'mrp_esf6',
+                inputValue: 'ESF-6: Mass Care, Emergency Assistance, Housing, Human Services',
                 boxLabel: 'ESF-6: Mass Care, Emergency Assistance, Housing, Human Services'
             }, {
                 name: 'mrp_esf7',
+                inoutValue: 'ESF-7: Logistics Management and Resource Support',
                 boxLabel: 'ESF-7: Logistics Management and Resource Support'
             }, {
                 name: 'mrp_esf8',
+                inputValue: 'ESF-8: Public Health & Medical Services',
                 boxLabel: 'ESF-8: Public Health & Medical Services'
             }, {
                 name: 'mrp_esf9',
+                inputValue: 'ESF-9: Search & Rescue',
                 boxLabel: 'ESF-9: Search & Rescue'
             }, {
                 name: 'mrp_esf10',
+                inputValue: 'ESF-10: Oil & Hazardous Materials Response',
                 boxLabel: 'ESF-10: Oil & Hazardous Materials Response'
             }, {
                 name: 'mrp_esf11',
+                inputValue: 'ESF-11: Argiculture & Natural Resources',
                 boxLabel: 'ESF-11: Argiculture & Natural Resources'
             }, {
                 name: 'mrp_esf12',
+                inputValue: 'ESF-12: Energy',
                 boxLabel: 'ESF-12: Energy'
             }, {
                 name: 'mrp_esf13',
+                inputValue: 'ESF-13: Public Safety & Security',
                 boxLabel: 'ESF-13: Public Safety & Security'
             }, {
                 name: 'mrp_esf14',
+                inputValue: 'ESF-14: Long-Term Community Recovery',
                 boxLabel: 'ESF-14: Long-Term Community Recovery'
             }, {
                 name: 'mrp_esf15',
+                boxLabel: 'ESF-15: External Affairs',
                 boxLabel: 'ESF-15: External Affairs'
             }]
         }]
     },
     {
         xtype: 'fieldset',
-        layout: 'column',
+        layout: 'vbox',
+        padding: 5,
         title: 'Capabilities, Description, Limitations, and Other Details',
         items: [{
-            columnWidth: 0.33,
+          
             items: [{
                 xtype: 'textareafield',
+                labelAlign: 'top',
                 fieldLabel: 'Mission Capabilities',
-                name: 'mrp_mission_capabilities'
+                name: 'mrp_mission_capabilities',
+                width: "100%"
             }, {
                 xtype: 'textareafield',
+                labelAlign: 'top',
                 fieldLabel: 'Detailed Resource Description',
-                name: 'mrp_resource_description'
+                name: 'mrp_resource_description',
+                width: "100%"
             }, {
                 xtype: 'textareafield',
+                labelAlign: 'top',
                 fieldLabel: 'Identify any transportation requirements',
-                name: 'mrp_transportation_requirement'
+                name: 'mrp_transportation_requirement',
+                width: "100%"
             }]
         }, {
-            columnWidth: 0.33,
+            
             items: [{
                 xtype: 'triggerfield',
+                labelAlign: 'top',
                 fieldLabel: 'Resource is (Fixed or Mobile)',
-                name: 'mrp_resource_mobility'
+                name: 'mrp_resource_mobility',
+                width: "100%"
             }, {
                 xtype: 'textareafield',
+                labelAlign: 'top',
                 fieldLabel: 'Space and Size Requirements',
-                name: 'mrp_space_size_requirements'
+                name: 'mrp_space_size_requirements',
+                width: "100%"
             }, {
                 xtype: 'textareafield',
+                labelAlign: 'top',
                 fieldLabel: 'Limiting Factors',
-                name: 'mrp_limiting_factors'
+                name: 'mrp_limiting_factors',
+                width: "100%"
             }]
         }, {
-            columnWidth: 0.33,
+            
             items: [{
                 xtype: 'textareafield',
                 fieldLabel: 'Logistical Support Needed',
-                anchor: '100%',
+                labelAlign: 'top',
+                width: '100%',
                 name: 'mrp_logistical_support'
-            }, {
+            }]
+        }]
+    },
+    
+    
+    {
                 xtype: 'fieldset',
                 title: 'Deployment Timeline',
+                layout : 'vbox',
                 items: [{
                     xtype: 'numberfield',
-                    anchor: '100%',
+                    width: "100%",
                     fieldLabel: 'Hours from notification until ready for deployment (N+)',
                     labelAlign: 'top',
                     name: 'mrp_deployment_timeline'
                 }]
-            }]
-        }]
-    }, {
+            },
+    
+     {
         xtype: 'fieldset',
         layout: 'vbox',
         title: 'Personnel',
@@ -416,7 +388,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
             fieldLabel: 'Identify any maintenance or rehabilitation requirements needed for this equipment',
             labelAlign: 'top',
             name: 'mrp_equipment_mrr',
-            height: 100
+            width: "100%"
         }]
     }]
 });

@@ -12,26 +12,41 @@ Ext.define('Mass.view.main.MrpFormTabPanel', {
     },
     {
         title: 'Travel',
-        items: []
+        bodyPadding: 10,
+        autoScroll: true,
+        xtype: 'edittravelform'
     },
     {
         title: 'Personnel',
-        items: []
+        layout: 'fit',
+        items: [{
+            xtype: 'personnelgrid'
+        }]
     },
     {
         title: 'Equipment',
-        items: []
+        layout: 'fit',
+        items: [{
+            xtype: 'equipmentgrid'
+        }]
     },
     {
         title: 'Commodities',
-        items: []
+        layout: 'fit',
+        items: [{
+            xtype: 'commoditiesgrid'
+        }]
     },
     {
         title: 'Other',
-        items: []
+        layout: 'fit',
+        items: [{
+            xtype: 'othergrid'
+        }]
     },
-    {
-        title: 'Cost Totals',
-        items: []
+     { title: 'Cost Totals',
+        bodyPadding: 10,
+        autoScroll: true,
+        xtype: 'costtotalsform'
     }]
 });
