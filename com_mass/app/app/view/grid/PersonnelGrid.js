@@ -9,24 +9,18 @@ Ext.define('Mass.view.grid.PersonnelGrid', {
 
     initComponent: function() {
         this.rowEditing = Ext.create('Ext.grid.plugin.RowEditing', {
-            clicksToMoveEditor: 1,
-            autoCancel: false
+            clicksToMoveEditor: 1
         });
 
         this.columns = [{
             dataIndex: 'id',
             text: 'ID',
-            width: 50,
-            editor: {
-                xtype: 'textfield',
-                allowBlank: false
-            }
+            width: 50
         }, {
             dataIndex: 'first_name',
             text: 'First Name',
             flex: 1,
             editor: {
-                xtype: 'textfield',
                 allowBlank: false
             }
         }];

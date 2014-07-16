@@ -2314,12 +2314,30 @@ Ext.ClassManager.addNameAlternateMappings({
   "Mass.Application": [],
   "Mass.controller.Main": [],
   "Mass.controller.Root": [],
+  "Mass.model.Commodities": [],
+  "Mass.model.Equipment": [],
   "Mass.model.Mrp": [],
+  "Mass.model.Other": [],
+  "Mass.model.Personnel": [],
+  "Mass.store.Commodities": [],
+  "Mass.store.Equipment": [],
   "Mass.store.Mprs": [],
+  "Mass.store.Other": [],
+  "Mass.store.Personnel": [],
+  "Mass.view.grid.CommoditiesGrid": [],
+  "Mass.view.grid.CommoditiesGridController": [],
+  "Mass.view.grid.EquipmentGrid": [],
+  "Mass.view.grid.EquipmentGridController": [],
   "Mass.view.grid.Grid": [],
   "Mass.view.grid.GridController": [],
+  "Mass.view.grid.OtherGrid": [],
+  "Mass.view.grid.OtherGridController": [],
+  "Mass.view.grid.PersonnelGrid": [],
+  "Mass.view.grid.PersonnelGridController": [],
   "Mass.view.main.AddMrpForm": [],
+  "Mass.view.main.CostTotalsForm": [],
   "Mass.view.main.EditMrpForm": [],
+  "Mass.view.main.EditTravelForm": [],
   "Mass.view.main.Main": [],
   "Mass.view.main.MainController": [],
   "Mass.view.main.MainModel": [],
@@ -3655,19 +3673,57 @@ Ext.ClassManager.addNameAliasMappings({
   "Mass.Application": [],
   "Mass.controller.Main": [],
   "Mass.controller.Root": [],
+  "Mass.model.Commodities": [],
+  "Mass.model.Equipment": [],
   "Mass.model.Mrp": [],
+  "Mass.model.Other": [],
+  "Mass.model.Personnel": [],
+  "Mass.store.Commodities": [],
+  "Mass.store.Equipment": [],
   "Mass.store.Mprs": [],
+  "Mass.store.Other": [],
+  "Mass.store.Personnel": [],
+  "Mass.view.grid.CommoditiesGrid": [
+    "widget.commoditiesgrid"
+  ],
+  "Mass.view.grid.CommoditiesGridController": [
+    "controller.commoditiesgrid"
+  ],
+  "Mass.view.grid.EquipmentGrid": [
+    "widget.equipmentgrid"
+  ],
+  "Mass.view.grid.EquipmentGridController": [
+    "controller.equipmentgrid"
+  ],
   "Mass.view.grid.Grid": [
     "widget.massgrid"
   ],
   "Mass.view.grid.GridController": [
     "controller.grid"
   ],
+  "Mass.view.grid.OtherGrid": [
+    "widget.othergrid"
+  ],
+  "Mass.view.grid.OtherGridController": [
+    "controller.othergrid"
+  ],
+  "Mass.view.grid.PersonnelGrid": [
+    "widget.personnelgrid"
+  ],
+  "Mass.view.grid.PersonnelGridController": [
+    "controller.personnelgrid"
+  ],
   "Mass.view.main.AddMrpForm": [
     "widget.addmrpform"
   ],
+  "Mass.view.main.CostTotalsForm": [
+    "widget.costtotalsform"
+  ],
   "Mass.view.main.EditMrpForm": [
     "widget.editmrpform"
+  ],
+  "Mass.view.main.EditTravelForm": [
+    "widget.edittravelform"
   ],
   "Mass.view.main.Main": [
     "widget.massviewport"
