@@ -15,7 +15,7 @@ Ext.define('Mass.view.grid.EquipmentGrid', {
         handler: 'addNewEquipmentRecord'
     }],
     columns: [
-    
+
     {
         dataIndex: 'id',
         text: 'ID',

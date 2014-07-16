@@ -15,6 +15,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
         name: 'id'
     }, {
         xtype: 'fieldset',
+        cls: 'mass-editmrpform-fieldset-title',
         title: 'Tracking Numbers',
         layout: {
             type: 'hbox',
@@ -180,7 +181,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
         },
         items: [{
             xtype: 'checkboxgroup',
-            
+
             fieldLabel: '',
             defaults: {
                 xtype: 'checkboxfield',
@@ -256,7 +257,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
         padding: 5,
         title: 'Capabilities, Description, Limitations, and Other Details',
         items: [{
-          
+
             items: [{
                 xtype: 'textareafield',
                 labelAlign: 'top',
@@ -277,7 +278,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
                 width: "100%"
             }]
         }, {
-            
+
             items: [{
                 xtype: 'triggerfield',
                 labelAlign: 'top',
@@ -298,7 +299,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
                 width: "100%"
             }]
         }, {
-            
+
             items: [{
                 xtype: 'textareafield',
                 fieldLabel: 'Logistical Support Needed',
@@ -308,8 +309,8 @@ Ext.define('Mass.view.main.EditMrpForm', {
             }]
         }]
     },
-    
-    
+
+
     {
                 xtype: 'fieldset',
                 title: 'Deployment Timeline',
@@ -322,7 +323,7 @@ Ext.define('Mass.view.main.EditMrpForm', {
                     name: 'mrp_deployment_timeline'
                 }]
             },
-    
+
      {
         xtype: 'fieldset',
         layout: 'vbox',
