@@ -96,6 +96,7 @@ Ext.define('Mass.view.main.Main', {
             glyph: 72,
             items: [{
                 xtype: 'tabpanel',
+                itemId: 'mainTapPanel',
                 reference: 'tabpanel',
                 items:[{
                     title: 'View All MPRs',

@@ -48,7 +48,7 @@ Ext.define('Mass.view.main.MainController', {
                 this.lookupReference('addMrpWindow').close();
                 this.getView().down('massgrid').getStore().reload();
 
-                var tabPanel = this.getView().down('tabpanel');
+                var tabPanel = this.getView().down('#mainTapPanel');
                 tab = tabPanel.add({
                     title: 'Edit MRP #' + action.result.id,
                     id : 'mrp_'+action.result.id,
@@ -134,7 +134,7 @@ Ext.define('Mass.view.main.MainController', {
 
         var mrp_id = btn.up('button').$widgetRecord.data.id;
 
-        var tabPanel = this.getView().down('tabpanel');
+        var tabPanel = this.getView().down('#mainTapPanel');
 
         if (!Ext.getCmp('mrp_' + mrp_id)) {
             tab = tabPanel.add({
