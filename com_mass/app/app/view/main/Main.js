@@ -2,7 +2,7 @@ Ext.define('Mass.view.main.Main', {
     extend: 'Ext.container.Viewport',
     xtype: 'massviewport',
 
-        requires: [
+    requires: [
         'Ext.tab.Panel',
         'Ext.tab.Tab',
         'Ext.form.Panel',
@@ -30,33 +30,91 @@ Ext.define('Mass.view.main.Main', {
         'Mass.view.grid.OtherGrid'
     ],
 
-
-
     controller: 'main',
     viewModel: {
         type: 'main'
     },
 
-    layout: {
-        type: 'border'
-    },
+    layout: 'fit',
 
     items: [{
-        xtype: 'panel',
-        bind: {
-            title: '{name}'
-        },
-        region: 'west',
-        width: 250,
-        split: true
-    }, {
-        region: 'center',
         xtype: 'tabpanel',
-        reference: 'tabpanel',
-        items:[{
+        ui: 'navigation',
+        plugins: 'responsive',
+        tabBarHeaderPosition: 1,
+        titleRotation: 0,
+        tabRotation: 0,
+
+        header: {
+            layout: {
+                align: 'stretchmax'
+            },
+            title: {
+                text: 'MyApp',
+                flex: 0
+            },
+            glyph: 61
+        },
+
+        tabBar: {
+            flex: 1,
+            layout: {
+                align: 'stretch',
+                overflowHandler: 'none'
+            }
+        },
+
+        responsiveConfig: {
+            tall: {
+                headerPosition: 'top'
+            },
+            wide: {
+                headerPosition: 'left'
+            }
+        },
+
+        defaults: {
+            tabConfig: {
+                plugins: 'responsive',
+                responsiveConfig: {
+                    wide: {
+                        iconAlign: 'left',
+                        textAlign: 'left'
+                    },
+                    tall: {
+                        iconAlign: 'top',
+                        textAlign: 'center',
+                        width: 120
+                    }
+                }
+            }
+        },
+
+        items: [{
             title: 'View All MPRs',
-            xtype: 'massgrid',
-            reference: 'massgrid'
+            layout: 'fit',
+            glyph: 72,
+            items: [{
+                xtype: 'tabpanel',
+                reference: 'tabpanel',
+                items:[{
+                    title: 'View All MPRs',
+                    xtype: 'massgrid',
+                    reference: 'massgrid'
+                }]
+            }]
+        }, {
+            title: 'Users',
+            glyph: 117,
+            html: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        }, {
+            title: 'Groups',
+            glyph: 85,
+            html: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+        }, {
+            title: 'Settings',
+            glyph: 42,
+            html: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         }]
     }]
 });

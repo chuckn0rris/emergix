@@ -989,3 +989,8 @@ $relative-image-path-for-uis: $ext-theme-neptune-resource-path;
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/File';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/form/field/HtmlEditor';
 @import '../../../../../ext/packages/ext-theme-neptune/sass/src/resizer/Resizer';
+/* including package Mass */
+$Mass-resource-path: 'images' !default;
+$relative-image-path-for-uis: $Mass-resource-path;
+@import '../../../../../sass/src/Application';
+@import '../../../../../sass/src/view/main/Main';

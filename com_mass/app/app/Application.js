@@ -32,5 +32,7 @@ Ext.define('Mass.Application', {
 
     launch: function () {
         // TODO - Launch the application
-    }
+    },
+
+    glyphFontFamily: 'Pictos'
 });
